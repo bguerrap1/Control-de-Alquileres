@@ -33,7 +33,14 @@ const fetchPropiedades = async () => {
     catch (error) {
         console.log(error);
     }
+    return(
+        <div className="container mt-5">
+            <h1>Propiedades</h1>
+        </div>
+    )
 }
+
+
 
 const editPropiedad = async(ID_Propiedad) => {
     try
@@ -56,7 +63,6 @@ const deletePropiedad = async(id) => {
             <table className="Table table-bordered">
                 <thead>
                     <tr>
-                        <th>ID_Propiedad</th>
                         <th>ID_Tipo</th>
                         <th>NumeroDeHabitaciones</th>
                         <th>AreaSuperficial</th>
